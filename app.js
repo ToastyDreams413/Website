@@ -207,7 +207,6 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('resize', handleScroll);
-window.addEventListener('load', handleScroll);
 window.addEventListener('scroll', handleTripleDots);
 
 function hoverUp(element) {
@@ -223,3 +222,5 @@ function hoverDown(element) {
     element.classList.remove("hover-up");
   }
 }
+
+window.onload = handleScroll;
