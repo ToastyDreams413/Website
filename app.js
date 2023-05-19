@@ -111,6 +111,7 @@ const text2 = "synergy of software, hardware, and mathematics.";
 const typingSpeed = 80;
 
 let index = 0;
+const intro = document.getElementById("intro");
 const myName = document.getElementById("name");
 const typedText1 = document.getElementById("typed-text");
 const typedText2 = document.getElementById("typed-text-two");
@@ -205,8 +206,14 @@ function handleScroll() {
   });
 }
 
+function handleInitialFadeIn() {
+  intro.classList.add('visible');
+  myName.classList.add('visible');
+}
+
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('resize', handleScroll);
+window.addEventListener('load', handleInitialFadeIn);
 window.addEventListener('scroll', handleTripleDots);
 
 function hoverUp(element) {
@@ -222,5 +229,3 @@ function hoverDown(element) {
     element.classList.remove("hover-up");
   }
 }
-
-window.onload = handleScroll;
