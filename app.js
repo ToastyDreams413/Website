@@ -213,7 +213,7 @@ function handleInitialFadeIn() {
 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('resize', handleScroll);
-window.addEventListener('load', handleInitialFadeIn);
+window.addEventListener('load', handleScroll);
 window.addEventListener('scroll', handleTripleDots);
 
 function hoverUp(element) {
