@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jack Chang</title>
+        <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="fixed-icons-div">
+            <a href="https://github.com/ToastyDreams413/" target="_blank">
+                <svg class="icon" width="23px" height="23px" fill="none" stroke="rgb(231, 223, 221)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <title>GitHub</title>
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jackcchang/" target="_blank">
+                <svg class="icon" width="23px" height="23px" fill="none" stroke="rgb(231, 223, 221)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <title>LinkedIn</title>
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+            <div class="icon-line"></div>
+        </div>
+        <div class="fixed-sections-div" id="fixed-sections-div">
+            <a class="sections-button" onclick="scrollToSection(1)">Home</a>
+            <a class="sections-button" onclick="scrollToSection(2)">About</a>
+            <a class="sections-button" onclick="scrollToSection(3)">Work</a>
+            <a class="sections-button" onclick="scrollToSection(4)">Projects</a>
+            <a class="sections-button" onclick="scrollToSection(5)">Contact</a>
+            <a href="files/Resume.pdf" class="sections-resume" target="_blank">Resume</a>
+        </div>
+        <div class="fixed-circle-div">
+            <div class="selector-circle-div">
+                <div class="selector-circle selected" id="circle-1" onclick="scrollToSection(1)"></div>
+            </div>
+            <div class="selector-circle-div">
+                <div class="selector-circle" id="circle-2" onclick="scrollToSection(2)"></div>
+            </div>
+            <div class="selector-circle-div">
+                <div class="selector-circle" id="circle-3" onclick="scrollToSection(3)"></div>
+            </div>
+            <div class="selector-circle-div">
+                <div class="selector-circle" id="circle-4" onclick="scrollToSection(4)"></div>
+            </div>
+            <div class="selector-circle-div">
+                <div class="selector-circle" id="circle-5" onclick="scrollToSection(5)"></div>
+            </div>
+        </div>
+        <section class="section one" id="section-1">
+            <div class="div-one">
+                <div class="one-left">
+                    <div class="one-left-right">
+                        <p class="one-intro fade-in one-text-color">Hi, my name is</p>
+                        <h1 class="one-name fade-in one-text-color">Jack Chang</h1>
+                    </div>
+                    <div class="typing-div">
+                        <p class="one-p" id="typed-text">.</p>
+                        <p class="one-p" id="typed-text-two">.</p>
+                    </div>
+                    <div class="non-typing-div">
+                        <p class="no-type-p fade-in">Crafting solutions for everyday life through the synergy of software, hardware, and mathematics.</p>
+                    </div>
+                </div>
+                <div class="one-right">
+                    <img src="./images/scrolldown.png" alt="scrolldown" class="image-one fade-in">
+                </div>
+            </div>
+        </section>
+        <section class="section two" id="section-2">
+            <div class="div-two">
+                <div class="two-left">
+                    <div class="two-left-right">
+                        <h2 class="about-heading two-text-color" id="about-heading">About Me</h2>
+                        <p class="two-p fade-in two-text-color">Nice to meet you!</p>
+                        <p class="two-p fade-in two-text-color">I'm Jack, an enthusiastic programmer with a keen fascination for AI and machine learning. I really enjoy challenging myself and expanding my skill set, especially through participating in competitive programming contests like the USA Computing Olympiad and Codeforces. I am currently a freshman in college pursuing a computer science degree.</p>
+                        <p class="two-p fade-in two-text-color">Let's work together! Contact me at <a href="mailto:jack8883@gmail.com" class="email">jack8883@gmail.com</a></p>
+                        <div class="resume-div fade-in">
+                            <a class="resume-link" href="files/Resume.pdf" target="_blank">Resume</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="two-right">
+                    <img src="./images/Jack.png" alt="jack" class="image-two fade-in"/>
+                </div>
+            </div>
+        </section>
+        <section class="section three" id="section-3">
+            <div class="work-experience">
+                <h1 class="work-heading">Work Experience</h1>
+                <div class="work-div">
+                    <div class="work-div-left">
+                        <a href="https://www.goodtrouble.games/" target="_blank">
+                            <img class="work-logo fade-in" src="images/GoodTrouble.png" alt="Good Trouble Logo">
+                        </a>
+                    </div>
+                    <div class="work-div-right">
+                        <h2 class="work-title fade-in">Intern Game Programmer</h2>
+                        <p class="work-company fade-in">Good Trouble, San Francisco, CA</p>
+                        <p class="work-date fade-in">Oct 2022 - March 2023</p>
+                        <p class="work-p-one work-text-color fade-in">I designed and implemented the <span class="work-highlight">aiming system</span> and <span class="work-highlight">UI menu</span> for a thrilling car racing and shooting game on PC and Xbox, utilizing Unity's new input system.</p>
+                        <p class="work-p work-text-color fade-in">Through this project, I gained valuable <span class="work-highlight">hands-on experience in gameplay programming</span> while elevating my <span class="work-highlight">proficiency in C# and Unity</span>. It provided me with opportunities to sharpen my <span class="work-highlight">problem-solving abilities</span>, refine my <span class="work-highlight">debugging skills</span>, and strengthen my <span class="work-highlight">communication</span>.</p>
+                    </div>
+                </div>
+                <div class="work-div">
+                    <div class="work-div-left">
+                        <a href="https://nexstreamtek.com/" target="_blank">
+                            <img class="work-logo fade-in" src="images/nexstream2.png" alt="NexStream Logo">
+                        </a>
+                    </div>
+                    <div class="work-div-right">
+                        <h2 class="work-title fade-in">Curriculum Developer & Instructor</h2>
+                        <p class="work-company fade-in">NexStream Technical Education, San Diego, CA</p>
+                        <p class="work-date fade-in">May 2022 - Present</p>
+                        <p class="work-p-one work-text-color fade-in">I <span class="work-highlight">developed and taught</span> multiple courses related to computer science:</p>
+                        <ul class="work-ul">
+                            <li class="work-li work-text-color fade-in">Intro to <span class="work-highlight">Pygame</span>, taught in Summer 2022</li>
+                            <li class="work-li work-text-color fade-in">Advanced <span class="work-highlight">Pygame</span>, taught in Summer 2022</li>
+                            <li class="work-li work-text-color fade-in"><span class="work-highlight">Bronze level USA Computing Olympiad logic and algorithms</span> course, taught in the 2022-2023 school year</li>
+                        </ul>
+                        <p class="work-p work-text-color fade-in">All courses can be found <a href="https://nexstreamtek.com/" class="work-link" target="_blank">here</a></p>
+                    </div>
+                </div>
+                <div class="work-div">
+                    <div class="work-div-left">
+                        <a href="https://www.goodtrouble.games/" target="_blank">
+                            <img class="work-logo fade-in" src="images/nexstream2.png" alt="Good Trouble Logo">
+                        </a>
+                    </div>
+                    <div class="work-div-right">
+                        <h2 class="work-title fade-in">Intern Programmer & Data Scientist</h2>
+                        <p class="work-company fade-in">NexStream Technical Education, San Diego, CA</p>
+                        <p class="work-date fade-in">Jan 2022 - May 2022</p>
+                        <p class="work-p-one work-text-color fade-in">I developed a comprehensive backend program using <span class="work-highlight">JavaScript xAPI</span> in conjunction with Watershed's Learning Record Store to <span class="work-highlight">collect and analyze data</span> on students' progress, time usage, and accuracy.</p>
+                        <p class="work-p work-text-color fade-in">Furthermore, I utilized <span class="work-highlight">Python</span> to <span class="work-highlight">implement advanced algorithms</span> that assess students' advancements and accuracy specifically in open-ended questions, <span class="work-highlight">aiming to enhance the overall quality of the courses</span>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section four" id="section-4">
+            <div class="projects">
+                <h1 class="projects-heading text-color-three">Some Things I've Made</h1>
+                <div class="project-div-type-1 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
+                    <div class="project-div-left-1">
+                        <h2 class="project-title">Toasty's RPG Bot</h2>
+                        <h3 class="project-time">Summer 2022</h3>
+                        <p class="project-text">Having previously developed smaller bots for specific purposes like card games and jokes, I created this Discord bot using Python. Users are able to type text commands to interact with the fantasy world, select character classes, embark on dungeon adventures, and earn valuable loot along the way.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/ToastyDreams413/Toasty-s-Discord-Bot-Project" class="project-link" target="_blank">Github</a>
+                            <a href="https://discord.com/api/oauth2/authorize?client_id=995816870261293160&permissions=8&scope=bot" class="project-link" target="_blank">Invite</a>
+                        </div>
+                    </div>
+                    <div class="project-div-right-1">
+                        <img class="project-image-1" src="images/ToastyBot.png" alt="Toasty Bot Picture">
+                    </div>
+                </div>
+                <div class="project-div-type-2 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
+                    <div class="project-div-left-2">
+                        <img class="project-image-2" src="images/VirtualClassroom.PNG" alt="Toasty Bot Picture">
+                    </div>
+                    <div class="project-div-right-2">
+                        <h2 class="project-title">Virtual Classroom</h2>
+                        <h3 class="project-time">Fall 2021</h3>
+                        <p class="project-text">As part of my high school’s Advanced Engineering class, I developed a 3D interactive virtual classroom environment using Unity, C#, and the Mirror library for networking functionality. Users could connect to a designated IP address, seamlessly navigate the virtual environment, see each other's avatars, and communicate via text chat.</p>
+                    </div>
+                </div>
+                <div class="project-div-type-1 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
+                    <div class="project-div-left-1">
+                        <h2 class="project-title">Island Escape</h2>
+                        <h3 class="project-time">Summer 2021</h3>
+                        <p class="project-text">I created this project in CMU’s summer session program, in the course 15-112: Fundamentals of Programming and Computer Science. Using CMU’s own Python library, an altered version of TKinter, I created this simple turn-based puzzle game. There are six levels, where the player tries to escape from chasing robots and avoid getting blown up by mines.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/JackChang0675/CMU-15-112-TP-Final" class="project-link" target="_blank">Github</a>
+                        </div>
+                    </div>
+                    <div class="project-div-right-1">
+                        <img class="project-image-1" src="images/IslandEscape.PNG" alt="Toasty Bot Picture">
+                    </div>
+                </div>
+                <div class="project-div-type-1 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
+                    <div class="project-div-left-2">
+                        <img class="project-image-2" src="images/SensorBot.jpg" alt="Toasty Bot Picture">
+                    </div>
+                    <div class="project-div-right-2">
+                        <h2 class="project-title">Sensor Bot</h2>
+                        <h3 class="project-time">Summer 2021</h3>
+                        <p class="project-text">During UCSD COSMOS, I integrated different sensors and a video camera with an Arduino to create a mechanism that accurately detected and mapped objects in its path. The system utilized an avoidance sensor for object detection, a motion sensor to detect whether the objects were moving, and an ultrasonic sensor to determine the object’s distance from the device.</p>
+                    </div>
+                </div>
+                <div class="project-div-type-1 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
+                    <div class="project-div-left-1">
+                        <h2 class="project-title">Aluminum Narwhals Robot</h2>
+                        <h3 class="project-time">Fall 2019 - Spring 2020</h3>
+                        <p class="project-text">I joined my high school's main robotics team, the Aluminum Narwhals (FRC Team 3128). Being part of the Controls division, my primary role revolved around the programming and wiring aspects of our robot. One of my significant contributions involved programming the robot's drivetrain using Java.</p>
+                    </div>
+                    <div class="project-div-right-1">
+                        <img class="project-image-1" src="images/AluminumNarwhals.png" alt="Toasty Bot Picture">
+                    </div>
+                </div>
+                <div class="project-div-type-2 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
+                    <div class="project-div-left-2">
+                        <img class="project-image-2" src="images/SynthwaveSiege.PNG" alt="Toasty Bot Picture">
+                    </div>
+                    <div class="project-div-right-2">
+                        <h2 class="project-title">Synthwave Siege</h2>
+                        <h3 class="project-time">Summer 2019</h3>
+                        <p class="project-text">After completing a Game Design course in my freshman year of high school, I developed a passion for game development. Motivated to challenge myself, I created this 3D futuristic tower defense game. While the Brackeys YouTube channel provided me with invaluable inspiration and guidance, I also incorporated my own creative ideas and implementations into the game.</p>
+                    </div>
+                </div>
+                <div class="project-div-type-2 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
+                    <div class="project-div-left-1">
+                        <h2 class="project-title">Flight Simulator</h2>
+                        <h3 class="project-time">Summer 2019</h3>
+                        <p class="project-text">Driven by my hunger for knowledge in game development with Unity, I created this 3D airplane flight simulator. I drew inspiration from various online videos that provided useful insights. With the graphics and models courtesy of online resources, I developed this realistic simulator by applying my knowledge of aerodynamics.</p>
+                    </div>
+                    <div class="project-div-right-1">
+                        <img class="project-image-1" src="images/Airplane.png" alt="Toasty Bot Picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section five" id="section-5">
+            <div class="contact-div">
+                <h2 class="contact-h2 text-color-five">Get In Touch</h2>
+                <p class="contact-p text-color-five">I’m currently looking for new opportunities! Feel free to reach out whether you have a question or just want to say hi. I’ll try my best to get back to you!</p>
+                <div class="contact-contacts">
+                    <a href="mailto:jack8883@gmail.com" class="contact-email">jack8883@gmail.com</a>
+                    <a href="tel:8583531522" class="contact-phone">(858) 353-1522</a>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
