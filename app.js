@@ -140,6 +140,9 @@ var started = false;
 
 document.addEventListener('DOMContentLoaded', function() {
   setTimeout(() => {
+    handleScroll();
+  }, 100);
+  setTimeout(() => {
     typedText1.textContent = "";
     typedText1.style.color = "#E7DFDD";
     fixedSectionsDiv.classList.add("visible");
@@ -201,11 +204,13 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('resize', handleScroll);
+/*
 document.addEventListener('DOMContentLoaded', function() {
   setTimeout(() => {
     handleScroll();
   }, 100);
 });
+*/
 window.addEventListener('scroll', handleTripleDots);
 
 function hoverUp(element) {
