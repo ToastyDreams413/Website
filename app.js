@@ -201,7 +201,11 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('resize', handleScroll);
-window.addEventListener('load', handleScroll);
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(() => {
+    handleScroll();
+  }, 100);
+});
 window.addEventListener('scroll', handleTripleDots);
 
 function hoverUp(element) {
