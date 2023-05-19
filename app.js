@@ -71,6 +71,8 @@ function changeCircles(originalCircle, newCircle) {
 
 
 var lastScrollTop = 0;
+const introText = document.getElementById("intro");
+const nameText = document.getElementById("name");
 const fixedSectionsDiv = document.getElementById("fixed-sections-div");
 const fixedIconsDiv = document.getElementById("fixed-icons-div");
 const fixedCirclesDiv = document.getElementById("fixed-circles-div");
@@ -140,7 +142,8 @@ var started = false;
 
 document.addEventListener('DOMContentLoaded', function() {
   setTimeout(() => {
-    handleScroll();
+    intro.classList.add("visible");
+    myName.classList.add("visible");
   }, 100);
   setTimeout(() => {
     typedText1.textContent = "";

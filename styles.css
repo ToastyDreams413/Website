@@ -48,6 +48,17 @@ section {
     animation: blink-caret 1.1s step-end infinite;
 }
 
+.initial-fade-in {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+.initial-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .fade-in {
     opacity: 0;
     transform: translateY(35px);
