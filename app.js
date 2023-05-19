@@ -1,6 +1,8 @@
 var version = Date.now();
-var script = document.createElement('script');
-script.src = 'script.js?v=' + version;
+var scriptElement = document.getElementById('javascript');
+var newScriptElement = document.createElement('script');
+newScriptElement.src = 'script.js?v=' + version;
+scriptElement.parentNode.replaceChild(newScriptElement, scriptElement);
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
