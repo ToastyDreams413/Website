@@ -1,9 +1,3 @@
-var version = Date.now();
-var scriptElement = document.getElementById('javascript');
-var newScriptElement = document.createElement('script');
-newScriptElement.src = 'script.js?v=' + version;
-scriptElement.parentNode.replaceChild(newScriptElement, scriptElement);
-
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 gsap.utils.toArray('.section').forEach(section => {
@@ -53,11 +47,6 @@ function findGreatestHeight() {
   }
 }
 
-function getWidth() {
-  // console.log(window.innerWidth);
-}
-
-window.addEventListener('scroll', getWidth);
 window.addEventListener('scroll', findGreatestHeight);
 window.addEventListener('load', findGreatestHeight);
 
@@ -96,7 +85,6 @@ window.addEventListener("scroll", function() {
       sectionsDivVisible = true;
       fixedSectionsDiv.classList.add("visible");
     }
-    // Perform actions or execute code when the user scrolls upward
   }
   else {
     if (sectionsDivVisible) {
@@ -150,16 +138,15 @@ function type2() {
 
 var started = false;
 
-myName.addEventListener('transitionend', () => {
-  if (!started) {
-    started = true;
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(() => {
     typedText1.textContent = "";
     typedText1.style.color = "#E7DFDD";
     fixedSectionsDiv.classList.add("visible");
     fixedIconsDiv.classList.add("visible");
     fixedCirclesDiv.classList.add("visible");
     type1();
-  }
+  }, 1210);
 })
 
 
@@ -210,11 +197,6 @@ function handleScroll() {
       }, 1200);
     }
   });
-}
-
-function handleInitialFadeIn() {
-  intro.classList.add('visible');
-  myName.classList.add('visible');
 }
 
 window.addEventListener('scroll', handleScroll);
