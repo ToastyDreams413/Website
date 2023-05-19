@@ -1,3 +1,7 @@
+var version = Date.now();
+var script = document.createElement('script');
+script.src = 'script.js?v=' + version;
+
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 gsap.utils.toArray('.section').forEach(section => {
