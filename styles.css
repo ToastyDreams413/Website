@@ -95,6 +95,12 @@ section {
     width: auto;
     z-index: 1;
     padding-left: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.fixed-icons-div.visible {
+    transform: translateX(0);
 }
 
 .icon {
@@ -172,7 +178,7 @@ section {
 
 
 
-.fixed-circle-div {
+.fixed-circles-div {
     position: fixed;
     width: 30px;
     top: 50%;
@@ -183,6 +189,12 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(150%);
+}
+
+.fixed-circles-div.visible {
+    transform: translateX(0);
 }
 
 .selector-circle-div {
@@ -808,7 +820,7 @@ section {
 
 
 
-    .fixed-circle-div {
+    .fixed-circles-div {
         right: 0.4rem;
     }
 
@@ -1370,7 +1382,7 @@ section {
         display: none;
     }
 
-    .fixed-circle-div {
+    .fixed-circles-div {
         display: none;
     }
 
@@ -1608,7 +1620,7 @@ section {
         display: none;
     }
 
-    .fixed-circle-div {
+    .fixed-circles-div {
         display: none;
     }
 
@@ -1866,7 +1878,7 @@ section {
         display: none;
     }
 
-    .fixed-circle-div {
+    .fixed-circles-div {
         display: none;
     }
 
@@ -2139,7 +2151,7 @@ section {
         display: none;
     }
 
-    .fixed-circle-div {
+    .fixed-circles-div {
         display: none;
     }
 

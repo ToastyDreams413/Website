@@ -77,6 +77,8 @@ function changeCircles(originalCircle, newCircle) {
 
 var lastScrollTop = 0;
 const fixedSectionsDiv = document.getElementById("fixed-sections-div");
+const fixedIconsDiv = document.getElementById("fixed-icons-div");
+const fixedCirclesDiv = document.getElementById("fixed-circles-div");
 var sectionsDivVisible = true;
 
 window.addEventListener("scroll", function() {
@@ -109,6 +111,7 @@ const text2 = "synergy of software, hardware, and mathematics.";
 const typingSpeed = 80;
 
 let index = 0;
+const myName = document.getElementById("name");
 const typedText1 = document.getElementById("typed-text");
 const typedText2 = document.getElementById("typed-text-two");
 
@@ -138,15 +141,19 @@ function type2() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
+var started = false;
+
+myName.addEventListener('transitionend', () => {
+  if (!started) {
+    started = true;
     typedText1.textContent = "";
     typedText1.style.color = "#E7DFDD";
     fixedSectionsDiv.classList.add("visible");
+    fixedIconsDiv.classList.add("visible");
+    fixedCirclesDiv.classList.add("visible");
     type1();
-  }, 1210);
-});
-
+  }
+})
 
 
 const aboutHeading = document.getElementById("about-heading");
