@@ -102,9 +102,8 @@ window.addEventListener("scroll", function() {
 
 
 
-
-const text1 = "Crafting solutions for everyday life through the";
-const text2 = "synergy of software, hardware, and mathematics.";
+const text1 = "Building software systems with a focus";
+const text2 = "on algorithms and real-world problems.";
 const typingSpeed = 80;
 
 let index = 0;
@@ -231,3 +230,57 @@ function hoverDown(element) {
     element.classList.remove("hover-up");
   }
 }
+
+
+
+// ===== Project Modal Logic =====
+const modalOverlay = document.getElementById("project-modal-overlay");
+const modal = document.getElementById("project-modal");
+const modalCloseBtn = document.getElementById("project-modal-close");
+const modalTitle = document.getElementById("project-modal-title");
+const modalTime = document.getElementById("project-modal-time");
+const modalBody = document.getElementById("project-modal-body");
+
+function openProjectModal(projectCard) {
+  const titleEl = projectCard.querySelector(".project-title");
+  const timeEl = projectCard.querySelector(".project-time");
+  const fullTextEl = projectCard.querySelector(".project-fulltext");
+
+  modalTitle.textContent = titleEl ? titleEl.textContent : "Project";
+  modalTime.textContent = timeEl ? timeEl.textContent : "";
+  modalBody.innerHTML = fullTextEl ? fullTextEl.innerHTML : "<p>No additional details provided.</p>";
+
+  modalOverlay.classList.add("open");
+  modalOverlay.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+
+function closeProjectModal() {
+  modalOverlay.classList.remove("open");
+  modalOverlay.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+}
+
+// open on read more click
+document.querySelectorAll(".project-readmore").forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const card = btn.closest(".fade-in-project-div") || btn.closest(".project-div-type-1") || btn.closest(".project-div-type-2");
+    if (card) openProjectModal(card);
+  });
+});
+
+// close button
+modalCloseBtn.addEventListener("click", closeProjectModal);
+
+// close when clicking outside modal
+modalOverlay.addEventListener("click", (e) => {
+  if (e.target === modalOverlay) closeProjectModal();
+});
+
+// close on Escape
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modalOverlay.classList.contains("open")) {
+    closeProjectModal();
+  }
+});

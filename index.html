@@ -3,7 +3,7 @@
 
 <!--
 WRITTEN BY: Jack Chang
-EMAIL: jackcc3@uci.edu
+EMAIL: jack8883@gmail.com
 -->
 
     <head>
@@ -38,7 +38,7 @@ EMAIL: jackcc3@uci.edu
             <a class="sections-button" onclick="scrollToSection(3)">Work</a>
             <a class="sections-button" onclick="scrollToSection(4)">Projects</a>
             <a class="sections-button" onclick="scrollToSection(5)">Contact</a>
-            <a href="files/Resume.pdf" class="sections-resume" target="_blank">Resume</a>
+            <a href="files/Resume2025.pdf" class="sections-resume" target="_blank">Resume</a>
         </div>
         <div class="fixed-circles-div" id="fixed-circles-div">
             <div class="selector-circle-div">
@@ -69,7 +69,7 @@ EMAIL: jackcc3@uci.edu
                         <p class="one-p" id="typed-text-two">.</p>
                     </div>
                     <div class="non-typing-div">
-                        <p class="no-type-p fade-in">Crafting solutions for everyday life through the synergy of software, hardware, and mathematics.</p>
+                        <p class="no-type-p fade-in">Building software systems with a focus on algorithms and real-world problems.</p>
                     </div>
                 </div>
                 <div class="one-right">
@@ -83,15 +83,15 @@ EMAIL: jackcc3@uci.edu
                     <div class="two-left-right">
                         <h2 class="about-heading two-text-color" id="about-heading">About Me</h2>
                         <p class="two-p fade-in two-text-color">Nice to meet you!</p>
-                        <p class="two-p fade-in two-text-color">I'm Jack, an enthusiastic programmer with a keen fascination for AI and machine learning. I really enjoy challenging myself and expanding my skill set, especially through participating in competitive programming contests like the USA Computing Olympiad and Codeforces. I am currently a junior at UCI pursuing a computer science degree.</p>
+                        <p class="two-p fade-in two-text-color">I’m Jack, a fourth-year computer science student at UC Irvine focused on building reliable, well-designed software systems. I enjoy working on projects and problems that require designing original solutions, particularly those involving algorithms and practical problem-solving.</p>
                         <p class="two-p fade-in two-text-color">Let's work together! Contact me at <a href="mailto:jack8883@gmail.com" class="email">jack8883@gmail.com</a></p>
                         <div class="resume-div fade-in">
-                            <a class="resume-link" href="files/Resume.pdf" target="_blank">Resume</a>
+                            <a class="resume-link" href="files/Resume2025.pdf" target="_blank">Resume</a>
                         </div>
                     </div>
                 </div>
                 <div class="two-right">
-                    <img src="./images/Jack.webp" alt="jack" class="image-two fade-in">
+                    <img src="./images/Jack2025.jpg" alt="jack" class="image-two fade-in">
                 </div>
             </div>
         </section>
@@ -179,82 +179,109 @@ EMAIL: jackcc3@uci.edu
                 <h1 class="projects-heading text-color-three">Some Things I've Made</h1>
                 <div class="project-div-type-1 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
                     <div class="project-div-left-1">
-                        <h2 class="project-title">Toasty's RPG Bot</h2>
-                        <h3 class="project-time">Summer 2022</h3>
-                        <p class="project-text">Having previously developed smaller bots for specific purposes like card games and jokes, I created this Discord bot using Python. Users are able to type text commands to interact with the fantasy world, select character classes, embark on dungeon adventures, and earn valuable loot along the way.</p>
+                        <h2 class="project-title">Monte Carlo Tree Search Visualization</h2>
+                        <h3 class="project-time">Sole Developer</h3>
+                        <p class="project-text">An interactive web demo that visualizes the Monte Carlo Tree Search algorithm, showing how decisions emerge through simulation and backpropagation.</p>
                         <div class="project-buttons">
-                            <a href="https://github.com/ToastyDreams413/Toasty-s-Discord-Bot-Project" class="project-link" target="_blank">Github</a>
-                            <a href="https://discord.com/api/oauth2/authorize?client_id=995816870261293160&permissions=8&scope=bot" class="project-link" target="_blank">Invite</a>
+                            <button class="project-btn project-readmore" type="button" aria-label="Read more about this project">Read more</button>
+                            <a href="https://mcts-project1.vercel.app/" class="project-btn project-demo" target="_blank">Live Demo</a>
+                            <a href="https://github.com/ToastyDreams413/MCTSProject1" class="project-btn project-github" target="_blank">Github</a>
+                        </div>
+                        <div class="project-fulltext" hidden>
+                            <p>
+                                I built this project to better understand and explain Monte Carlo Tree Search (MCTS), which is an algorithm commonly used in game AI and planning.
+                                The demo visualizes selection, expansion, simulation (rollouts), and backpropagation, showing how visit counts and value estimates evolve as the tree grows.
+                            </p>
+                            <p>
+                                The UI is designed for clarity: you can see node values, visit counts, and the decision path that the search currently favors.
+                            </p>
                         </div>
                     </div>
                     <div class="project-div-right-1">
-                        <img class="project-image-1" src="images/ToastyBot.webp" alt="Toasty Bot Picture">
+                        <img class="project-image-1" src="images/MCTS.png" alt="MCTS Picture">
                     </div>
                 </div>
                 <div class="project-div-type-2 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
                     <div class="project-div-left-2">
-                        <img class="project-image-2" src="images/VirtualClassroom.webp" alt="Toasty Bot Picture">
+                        <img class="project-image-2" src="images/ToastyPlugin.png" alt="Toasty Plugin Picture">
                     </div>
                     <div class="project-div-right-2">
-                        <h2 class="project-title">Virtual Classroom</h2>
-                        <h3 class="project-time">Fall 2021</h3>
-                        <p class="project-text">As part of my high school’s Advanced Engineering class, I developed a 3D interactive virtual classroom environment using Unity, C#, and the Mirror library for networking functionality. Users could connect to a designated IP address, seamlessly navigate the virtual environment, see each other's avatars, and communicate via text chat.</p>
+                        <h2 class="project-title">"ToastyPlugin": Minecraft Dungeons Plugin</h2>
+                        <h3 class="project-time">Project Lead</h3>
+                        <p class="project-text">A Java-based Minecraft server plugin that introduces custom gameplay mechanics using an event-driven architecture designed for multiplayer environments.</p>
+                        <div class="project-buttons">
+                            <button class="project-btn project-readmore" type="button" aria-label="Read more about this project">Read more</button>
+                            <a href="https://www.youtube.com/watch?v=zwykuQcliww&ab_channel=ToastyDreams" class="project-btn project-demo" target="_blank">Video Demo</a>
+                            <a href="https://github.com/ToastyDreams413/ToastyPlugin" class="project-btn project-github" target="_blank">Github</a>
+                        </div>
+                        <div class="project-fulltext" hidden>
+                            <p>
+                                ToastyPlugin is a Java Minecraft server plugin I built to explore server-side, event-driven programming in a multiplayer environment.
+                                The main focus was writing maintainable gameplay logic while keeping state updates consistent and responsive.
+                            </p>
+                            <p>
+                                I structured the code into modules (commands/listeners/managers) so new mechanics were easy to add without turning the project into one giant class.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="project-div-type-1 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
                     <div class="project-div-left-1">
-                        <h2 class="project-title">Island Escape</h2>
-                        <h3 class="project-time">Summer 2021</h3>
-                        <p class="project-text">I created this project in CMU’s summer session program, in the course 15-112: Fundamentals of Programming and Computer Science. Using CMU’s own Python library, an altered version of TKinter, I created this simple turn-based puzzle game. There are six levels, where the player tries to escape from chasing robots and avoid getting blown up by mines.</p>
+                        <h2 class="project-title">"Retune": Youtube UI Rework</h2>
+                        <h3 class="project-time">Project Lead</h3>
+                        <p class="project-text">A redesigned YouTube web interface focused on usability, layout clarity, and interaction flow.</p>
                         <div class="project-buttons">
-                            <a href="https://github.com/JackChang0675/CMU-15-112-TP-Final" class="project-link" target="_blank">Github</a>
+                            <button class="project-btn project-readmore" type="button" aria-label="Read more about this project">Read more</button>
+                            <a href="https://in-4-matx-134-project.vercel.app/" class="project-btn project-demo" target="_blank">Live Demo</a>
+                            <a href="https://github.com/Taikiy49/IN4MATX-134-PROJECT" class="project-btn project-github" target="_blank">Github</a>
+                        </div>
+                        <div class="project-fulltext" hidden>
+                            <p>
+                                I worked on a YouTube UI redesign focused on improving usability, visual hierarchy, and interaction clarity.
+                                The project explored how layout, spacing, and component structure affect user navigation and content discovery.
+                            </p>
+                            <p>
+                                I implemented core interface components and interactions using modern frontend practices, emphasizing
+                                clean structure, responsiveness, and consistency across views.
+                            </p>
+                            <p>
+                                This project strengthened my understanding of frontend architecture, UI composition, and translating
+                                design goals into maintainable code.
+                            </p>
                         </div>
                     </div>
                     <div class="project-div-right-1">
-                        <img class="project-image-1" src="images/IslandEscape.webp" alt="Toasty Bot Picture">
-                    </div>
-                </div>
-                <div class="project-div-type-1 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
-                    <div class="project-div-left-2">
-                        <img class="project-image-2" src="images/SensorBot.webp" alt="Toasty Bot Picture">
-                    </div>
-                    <div class="project-div-right-2">
-                        <h2 class="project-title">Sensor Bot</h2>
-                        <h3 class="project-time">Summer 2021</h3>
-                        <p class="project-text">During UCSD COSMOS, I integrated different sensors and a video camera with an Arduino to create a mechanism that accurately detected and mapped objects in its path. The system utilized an avoidance sensor for object detection, a motion sensor to detect whether the objects were moving, and an ultrasonic sensor to determine the object’s distance from the device.</p>
-                    </div>
-                </div>
-                <div class="project-div-type-1 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
-                    <div class="project-div-left-1">
-                        <h2 class="project-title">Aluminum Narwhals Robot</h2>
-                        <h3 class="project-time">Fall 2019 - Spring 2020</h3>
-                        <p class="project-text">I joined my high school's main robotics team, the Aluminum Narwhals (FRC Team 3128). Being part of the Controls division, my primary role revolved around the programming and wiring aspects of our robot. One of my significant contributions involved programming the robot's drivetrain using Java.</p>
-                    </div>
-                    <div class="project-div-right-1">
-                        <img class="project-image-1" src="images/AluminumNarwhals.webp" alt="Toasty Bot Picture">
+                        <img class="project-image-1" src="images/Retune.png" alt="Retune Picture">
                     </div>
                 </div>
                 <div class="project-div-type-2 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
                     <div class="project-div-left-2">
-                        <img class="project-image-2" src="images/SynthwaveSiege.webp" alt="Toasty Bot Picture">
+                        <img class="project-image-2" src="images/WebCrawler.png" alt="Web Crawler Picture">
                     </div>
                     <div class="project-div-right-2">
-                        <h2 class="project-title">Synthwave Siege</h2>
-                        <h3 class="project-time">Summer 2019</h3>
-                        <p class="project-text">After completing a Game Design course in my freshman year of high school, I developed a passion for game development. Motivated to challenge myself, I created this 3D futuristic tower defense game. While the Brackeys YouTube channel provided me with invaluable inspiration and guidance, I also incorporated my own creative ideas and implementations into the game.</p>
+                        <h2 class="project-title">Web Crawler</h2>
+                        <h3 class="project-time">Programmer</h3>
+                        <p class="project-text">A web crawler that collects, parses, and indexes web pages for efficient search and analysis.</p>
+                        <div class="project-buttons">
+                            <button class="project-btn project-readmore" type="button" aria-label="Read more about this project">Read more</button>
+                            <a href="https://github.com/rosnita7/cs121_A3" class="project-btn project-github" target="_blank">Github</a>
+                        </div>
+                        <div class="project-fulltext" hidden>
+                            <p>
+                                I built a web crawler that systematically traverses web pages, extracts content, and builds
+                                structured indexes for later querying and analysis.
+                            </p>
+                            <p>
+                                The project involved handling URL traversal, avoiding duplicate visits, parsing page content,
+                                and organizing data in a way that supports efficient lookup.
+                            </p>
+                            <p>
+                                This work reinforced core backend concepts such as data processing pipelines, algorithmic traversal,
+                                and writing robust code for large input spaces.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-div-type-2 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
-                    <div class="project-div-left-1">
-                        <h2 class="project-title">Flight Simulator</h2>
-                        <h3 class="project-time">Summer 2019</h3>
-                        <p class="project-text">Driven by my hunger for knowledge in game development with Unity, I created this 3D airplane flight simulator. I drew inspiration from various online videos that provided useful insights. With the graphics and models courtesy of online resources, I developed this realistic simulator by applying my knowledge of aerodynamics.</p>
-                    </div>
-                    <div class="project-div-right-1">
-                        <img class="project-image-1" src="images/Airplane.webp" alt="Toasty Bot Picture">
-                    </div>
-                </div>
-            </div>
         </section>
         <section class="section five" id="section-5">
             <div class="contact-div">
@@ -266,6 +293,17 @@ EMAIL: jackcc3@uci.edu
                 </div>
             </div>
         </section>
+        
+        <!-- Project Modal -->
+        <div class="project-modal-overlay" id="project-modal-overlay" aria-hidden="true">
+        <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+            <button class="project-modal-close" id="project-modal-close" aria-label="Close project details">×</button>
+            <h2 class="project-modal-title" id="project-modal-title"></h2>
+            <p class="project-modal-time" id="project-modal-time"></p>
+            <div class="project-modal-body" id="project-modal-body"></div>
+        </div>
+        </div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>

@@ -410,7 +410,7 @@ section {
 }
 
 .image-two {
-    width: 25rem;
+    width: 20rem;
     height: auto;
 }
 
@@ -643,14 +643,14 @@ section {
 
 .project-image-1 {
     margin-left: -1.6rem;
-    height: 18rem;
+    height: 16rem;
     width: auto;
     border-radius: 8px;
 }
 
 .project-image-2 {
     margin-right: -1.6rem;
-    height: 18rem;
+    height: 16rem;
     width: auto;
     border-radius: 8px;
 }
@@ -672,7 +672,8 @@ section {
 }
 
 .project-text {
-    margin-top: 0.625rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
     color: #54e4e6;
     font-size: 1.2rem;
 }
@@ -681,9 +682,10 @@ section {
     height: 100%;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
     margin-top: 1rem;
+    gap: 1.5rem;
 }
 
 .project-link {
@@ -2411,4 +2413,173 @@ section {
         margin-bottom: 1rem;
     }
 
+}
+
+
+/* project modal */
+.project-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 2rem;
+}
+
+.project-modal-overlay.open {
+    display: flex;
+}
+
+.project-modal {
+    width: min(900px, 92vw);
+    max-height: 82vh;
+    overflow: auto;
+    background-color: #0b4445;
+    border-radius: 1.5rem;
+    padding: 1.75rem 1.75rem 1.5rem 1.75rem;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.45);
+    position: relative;
+}
+
+.project-modal-title {
+    font-family: "Russo One";
+    font-weight: normal;
+    color: #D1E8E2;
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.project-modal-time {
+    font-style: italic;
+    color: #D1E8E2;
+    margin-bottom: 1rem;
+}
+
+.project-modal-body {
+    color: #54e4e6;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.project-modal-body p {
+    margin-bottom: 1rem;
+}
+
+.project-modal-close {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.9rem;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    color: #D1E8E2;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.project-modal-close:hover {
+    background: rgba(255,255,255,0.14);
+}
+
+
+
+/* Read more button */
+.project-readmore {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #6c9ba3;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.project-readmore:hover {
+    color: #7ad0df;
+    text-decoration: underline;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+
+
+/* Read more CTA */
+.project-readmore {
+    border: 2px solid #45bab5;
+    background-color: rgba(69, 186, 181, 0.14);
+    color: #D1E8E2;
+    font-family: "Russo One";
+    font-weight: normal;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.project-readmore:hover {
+    background-color: rgba(69, 186, 181, 0.24);
+    transform: translateY(-2px);
+}
+
+.project-readmore:active {
+    transform: translateY(0);
+}
+
+
+
+/* Live Demo button */
+.project-demo {
+    border: 2px solid #7ad0df;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #D1E8E2;
+    font-family: "Russo One";
+    border-radius: 999px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.project-demo:hover {
+    background-color: rgba(122, 208, 223, 0.28);
+    transform: translateY(-2px);
+}
+
+
+
+/* GitHub button */
+.project-github {
+    border: 2px solid rgba(209, 232, 226, 0.4);
+    background-color: transparent;
+    color: #D1E8E2;
+    font-family: "Russo One";
+    border-radius: 999px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+.project-github:hover {
+    background-color: rgba(209, 232, 226, 0.12);
+    transform: translateY(-1px);
+}
+
+
+
+.project-btn {
+    font-family: "Russo One";
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.45rem 0.95rem;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2rem;
+    box-sizing: border-box;
 }
