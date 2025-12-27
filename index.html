@@ -65,11 +65,12 @@ EMAIL: jack8883@gmail.com
                         <h1 class="one-name initial-fade-in one-text-color" id="name">Jack Chang</h1>
                     </div>
                     <div class="typing-div">
-                        <p class="one-p" id="typed-text">.</p>
-                        <p class="one-p" id="typed-text-two">.</p>
-                    </div>
-                    <div class="non-typing-div">
-                        <p class="no-type-p fade-in">Building software systems with a focus on algorithms and real-world problems.</p>
+                        <p class="one-p">
+                            <span id="typed-text"></span>
+                        </p>
+                        <p class="one-p">
+                            <span id="typed-text-two"></span><span id="caret" aria-hidden="true"></span>
+                        </p>
                     </div>
                 </div>
                 <div class="one-right">
@@ -83,7 +84,16 @@ EMAIL: jack8883@gmail.com
                     <div class="two-left-right">
                         <h2 class="about-heading two-text-color" id="about-heading">About Me</h2>
                         <p class="two-p fade-in two-text-color">Nice to meet you!</p>
-                        <p class="two-p fade-in two-text-color">I’m Jack, a fourth-year computer science student at UC Irvine focused on building reliable, well-designed software systems. I enjoy working on projects and problems that require designing original solutions, particularly those involving algorithms and practical problem-solving.</p>
+                        <p class="two-p fade-in two-text-color">
+                            I’m Jack, a fourth-year Computer Science student at UC Irvine with a strong foundation in algorithms, systems, and software engineering.
+                            I enjoy working on problems that require designing original solutions, particularly those involving algorithms and practical problem-solving.
+                        </p>
+
+                        <p class="two-p fade-in two-text-color">
+                            In recent years, I’ve been developing a deeper interest in computer vision and applied AI through coursework and projects,
+                            including an end-to-end geometric vision pipeline and interactive algorithm visualizations.
+                            I’m especially interested in understanding how learning-based and classical methods behave in real-world settings.
+                        </p>
                         <p class="two-p fade-in two-text-color">Let's work together! Contact me at <a href="mailto:jack8883@gmail.com" class="email">jack8883@gmail.com</a></p>
                         <div class="resume-div fade-in">
                             <a class="resume-link" href="files/Resume2025.pdf" target="_blank">Resume</a>
@@ -177,6 +187,31 @@ EMAIL: jack8883@gmail.com
         <section class="section four" id="section-4">
             <div class="projects">
                 <h1 class="projects-heading text-color-three">Some Things I've Made</h1>
+                <div class="project-div-type-2 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
+                    <div class="project-div-left-2">
+                        <img class="project-image-2" src="images/CVProject.png" alt="Computer Vision Pipeline preview">
+                    </div>
+                    <div class="project-div-right-2">
+                        <h2 class="project-title">Geometric Computer Vision Pipeline</h2>
+                        <h3 class="project-time">Sole Developer</h3>
+                        <p class="project-text">An end-to-end classical computer vision pipeline for feature matching, homography estimation, and panorama stitching with robust alignment visualization.</p>
+                        <div class="project-buttons">
+                            <button class="project-btn project-readmore" type="button" aria-label="Read more about this project">Read more</button>
+                            <a href="https://www.youtube.com/watch?v=zwykuQcliww&ab_channel=ToastyDreams" class="project-btn project-demo" target="_blank">Video Demo</a>
+                            <a href="https://github.com/ToastyDreams413/ToastyPlugin" class="project-btn project-github" target="_blank">Github</a>
+                        </div>
+                        <div class="project-fulltext" hidden>
+                            <p>
+                                This project combines multiple computer vision assignments into a single pipeline: feature detection and matching (ORB), 
+                                robust homography estimation (RANSAC), inverse warping, and blending for panorama construction.
+                            </p>
+                            <p>
+                                To validate alignment quality, I built visual debug tools for match correspondences, inlier masks, and intermediate warp stages, 
+                                making it easier to diagnose failure cases (repetitive textures, low parallax, motion blur).
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-div-type-1 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
                     <div class="project-div-left-1">
                         <h2 class="project-title">Monte Carlo Tree Search Visualization</h2>
@@ -294,7 +329,6 @@ EMAIL: jack8883@gmail.com
             </div>
         </section>
         
-        <!-- Project Modal -->
         <div class="project-modal-overlay" id="project-modal-overlay" aria-hidden="true">
         <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
             <button class="project-modal-close" id="project-modal-close" aria-label="Close project details">×</button>

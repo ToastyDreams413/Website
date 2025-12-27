@@ -102,8 +102,8 @@ window.addEventListener("scroll", function() {
 
 
 
-const text1 = "Building software systems with a focus";
-const text2 = "on algorithms and real-world problems.";
+const text1 = "Exploring how software and algorithms";
+const text2 = "shape intelligent systems.";
 const typingSpeed = 80;
 
 let index = 0;
@@ -119,6 +119,7 @@ function type1() {
     setTimeout(type1, typingSpeed);
   }
   else {
+    caret.style.opacity = "1";
     setTimeout(() => {
       typedText2.textContent = "";
       typedText2.style.color = "#E7DFDD";
@@ -134,7 +135,7 @@ function type2() {
     index2++;
     setTimeout(type2, typingSpeed);
   } else {
-    typedText2.classList.add("blink");
+    caret.classList.add("blink");
   }
 }
 
@@ -147,6 +148,8 @@ document.addEventListener('DOMContentLoaded', function() {
     scrolldown.classList.add("visible");
   }, 100);
   setTimeout(() => {
+    caret.classList.remove("blink");
+    caret.style.opacity = "0";
     typedText1.textContent = "";
     typedText1.style.color = "#E7DFDD";
     fixedSectionsDiv.classList.add("visible");

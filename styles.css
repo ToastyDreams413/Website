@@ -43,10 +43,6 @@ section {
     display: inline-block;
 }
 
-.blink {
-    border-right: 2px solid #E7DFDD; /* Change the color here */
-    animation: blink-caret 1.1s step-end infinite;
-}
 
 .initial-fade-in {
     opacity: 0;
@@ -247,7 +243,7 @@ section {
 
 
 .two {
-    background: #45bab5;
+    background: #369f9b;
 }
 
 .three {
@@ -2582,4 +2578,27 @@ body.modal-open {
     justify-content: center;
     height: 2.2rem;
     box-sizing: border-box;
+}
+
+
+
+#typed-text, #typed-text-two {
+  display: inline;
+  font-family: "Russo One";
+}
+
+#caret {
+  display: inline-block;
+  width: 0;
+  border-right: 2px solid #E7DFDD;
+  margin-left: 2px;
+  height: 1em;
+  vertical-align: -0.1em;
+  opacity: 0;
+  font-family: "Russo One";
+}
+
+#caret.blink {
+  opacity: 1;
+  animation: blink-caret 1.1s step-end infinite;
 }
