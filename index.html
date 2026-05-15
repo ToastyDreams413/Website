@@ -38,7 +38,7 @@ EMAIL: jack8883@gmail.com
             <a class="sections-button" onclick="scrollToSection(3)">Work</a>
             <a class="sections-button" onclick="scrollToSection(4)">Projects</a>
             <a class="sections-button" onclick="scrollToSection(5)">Contact</a>
-            <a href="files/Resume2025.pdf" class="sections-resume" target="_blank">Resume</a>
+            <a href="files/ResumeMay2026.pdf" class="sections-resume" target="_blank">Resume</a>
         </div>
         <div class="fixed-circles-div" id="fixed-circles-div">
             <div class="selector-circle-div">
@@ -96,7 +96,7 @@ EMAIL: jack8883@gmail.com
                         </p>
                         <p class="two-p fade-in two-text-color">Let's work together! Contact me at <a href="mailto:jack8883@gmail.com" class="email">jack8883@gmail.com</a></p>
                         <div class="resume-div fade-in">
-                            <a class="resume-link" href="files/Resume2025.pdf" target="_blank">Resume</a>
+                            <a class="resume-link" href="files/ResumeMay2026.pdf" target="_blank">Resume</a>
                         </div>
                     </div>
                 </div>
@@ -187,6 +187,71 @@ EMAIL: jack8883@gmail.com
         <section class="section four" id="section-4">
             <div class="projects">
                 <h1 class="projects-heading text-color-three">Some Things I've Made</h1>
+
+                <div class="project-div-type-2 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
+                    <div class="project-div-left-2">
+                        <img class="project-image-2" src="images/Orion.png" alt="Orion AI threat assessment system preview">
+                    </div>
+
+                    <div class="project-div-right-2">
+                        <h2 class="project-title">Orion: AI Threat Assessment System</h2>
+                        <h3 class="project-time">Sole Developer</h3>
+
+                        <p class="project-text">
+                            A defense-inspired AI simulation that tracks global airborne objects, scores potential threats, and provides an AI advisor for interpreting risk and recommending responses.
+                        </p>
+
+                        <div class="project-buttons">
+                            <button class="project-btn project-readmore" type="button" aria-label="Read more about Orion">Read more</button>
+                            <a href="https://orion-oz9n.onrender.com/" class="project-btn project-demo" target="_blank">Live Demo</a>
+                            <a href="https://github.com/ToastyDreams413/Orion" class="project-btn project-github" target="_blank">Github</a>
+                        </div>
+
+                        <div class="project-fulltext" hidden>
+                            <p>
+                                Orion is a full-stack threat assessment simulator built around a live map interface, simulated aircraft and unknown tracks, and an AI advisor that helps explain the system's reasoning.
+                                The project models objects with attributes such as location, altitude, heading, intent, capability, and suspicious behavior, then uses those signals to estimate risk.
+                            </p>
+
+                            <p>
+                                I designed the system to feel like an operational decision-support tool: users can inspect objects, view threat scores, ask the AI advisor questions, and receive scenario-based recommendations.
+                                The goal was to combine simulation, scoring logic, UI design, and LLM-based explanation into a polished defense/space-oriented portfolio project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-div-type-1 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
+                <div class="project-div-left-1">
+                    <h2 class="project-title">Chess Commentator</h2>
+                    <h3 class="project-time">Project Lead</h3>
+
+                    <p class="project-text">
+                        An AI chess commentary system that converts board positions and engine analysis into natural-language explanations using Stockfish features and a fine-tuned T5 model.
+                    </p>
+
+                    <div class="project-buttons">
+                        <button class="project-btn project-readmore" type="button" aria-label="Read more about Chess Commentator">Read more</button>
+                        <a href="https://huggingface.co/ToastyDreams/chess-commentary-t5" class="project-btn project-demo" target="_blank">Hugging Face</a>
+                        <a href="https://github.com/inqnhoang/Chess-Commentator" class="project-btn project-github" target="_blank">Github</a>
+                    </div>
+
+                    <div class="project-fulltext" hidden>
+                        <p>
+                            Chess Commentator generates human-like commentary for chess moves by combining traditional engine analysis with machine learning.
+                            For each position, the system extracts Stockfish-based features such as evaluation swing, win percentage change, checks, captures, hanging pieces, mobility changes, trades, and positional improvements.
+                        </p>
+
+                        <p>
+                            I generated a large-scale training dataset using deterministic commentary templates, then fine-tuned a T5 sequence-to-sequence model to translate structured chess features into readable explanations.
+                            The model was evaluated against GPT-generated commentary using rubric-based scoring for faithfulness, relevance, informativeness, clarity, human-likeness, and conciseness.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-div-right-1">
+                    <img class="project-image-1" src="images/ChessCommentaryPresentation.png" alt="Chess Commentator preview">
+                </div>
+            </div>
                 <div class="project-div-type-2 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
                     <div class="project-div-left-2">
                         <img class="project-image-2" src="images/CVProject.png" alt="Computer Vision Pipeline preview">
