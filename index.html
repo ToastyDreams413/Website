@@ -37,8 +37,24 @@ EMAIL: jack8883@gmail.com
             <a class="sections-button" onclick="scrollToSection(2)">About</a>
             <a class="sections-button" onclick="scrollToSection(3)">Work</a>
             <a class="sections-button" onclick="scrollToSection(4)">Projects</a>
-            <a class="sections-button" onclick="scrollToSection(5)">Contact</a>
-            <a href="files/ResumeJune2026.pdf" class="sections-resume" target="_blank">Resume</a>
+            <a class="sections-button" onclick="scrollToSection(5)">Honors</a>
+            <a class="sections-button" onclick="scrollToSection(6)">Personal</a>
+            <a class="sections-button" onclick="scrollToSection(7)">Contact</a>
+            <div class="sections-socials">
+                <a href="https://github.com/ToastyDreams413/" class="sections-social" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/jackcchang/" class="sections-social" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+            <a href="files/Resume.pdf" class="sections-resume" target="_blank">Resume</a>
         </div>
         <div class="fixed-circles-div" id="fixed-circles-div">
             <div class="selector-circle-div">
@@ -56,6 +72,12 @@ EMAIL: jack8883@gmail.com
             <div class="selector-circle-div">
                 <div class="selector-circle" id="circle-5" onclick="scrollToSection(5)"></div>
             </div>
+            <div class="selector-circle-div">
+                <div class="selector-circle" id="circle-6" onclick="scrollToSection(6)"></div>
+            </div>
+            <div class="selector-circle-div">
+                <div class="selector-circle" id="circle-7" onclick="scrollToSection(7)"></div>
+            </div>
         </div>
         <section class="section one" id="section-1">
             <div class="div-one">
@@ -72,6 +94,9 @@ EMAIL: jack8883@gmail.com
                             <span id="typed-text-two"></span><span id="caret" aria-hidden="true"></span>
                         </p>
                     </div>
+                    <div class="non-typing-div">
+                        <p class="no-type-p initial-fade-in" id="hero-tagline">Exploring how software and algorithms shape intelligent systems.</p>
+                    </div>
                 </div>
                 <div class="one-right">
                     <img src="./images/scrolldown.webp" alt="scrolldown" class="image-one initial-fade-in" id="scrolldown">
@@ -83,20 +108,38 @@ EMAIL: jack8883@gmail.com
                 <div class="two-left">
                     <div class="two-left-right">
                         <h2 class="about-heading two-text-color" id="about-heading">About Me</h2>
-                        <p class="two-p fade-in two-text-color">Nice to meet you!</p>
+                        <p class="two-p fade-in two-text-color">Nice to meet you! I’m Jack, a CS grad from UC Irvine. Here's how I got to where I am:</p>
+                        <ul class="about-ul">
+                            <li class="about-li fade-in two-text-color">
+                                At age 12, I created a cash-tycoon game on Scratch, and quickly got 2,000+ plays on it.
+                                Shortly after I wrote my first lines of real code, a browser-based treasure hunting game.
+                            </li>
+                            <li class="about-li fade-in two-text-color">
+                                In high school, I found I loved thinking, and delved into competitive programming while also
+                                starting to play chess. Made USACO Gold at the 2020 US Open, and became the president of my
+                                high school's Programming and Problem Solving club (the #1 public high school in California
+                                at the time!)
+                            </li>
+                            <li class="about-li fade-in two-text-color">
+                                At UCI I found machine learning and computer vision, hooked on problems where a model has
+                                to justify its answer, not just produce one.
+                            </li>
+                            <li class="about-li fade-in two-text-color">
+                                That led to projects like Rookie, a T5 model I trained to explain chess moves that chess
+                                players preferred over GPT-4o-mini 73.7% of the time. And Orion, a threat assessment
+                                simulator where an AI advisor has to justify every risk score it assigns.
+                            </li>
+                            <li class="about-li fade-in two-text-color">
+                                Now I break a constraint solver for a living. 80+ defects found so far.
+                            </li>
+                        </ul>
                         <p class="two-p fade-in two-text-color">
-                            I’m Jack, a fourth-year Computer Science student at UC Irvine with a strong foundation in algorithms, systems, and software engineering.
-                            I enjoy working on problems that require designing original solutions, particularly those involving algorithms and practical problem-solving.
+                            Happy to talk tech, chess, or anything else you have in mind! Reach me at
+                            <a href="mailto:jack8883@gmail.com" class="email">jack8883@gmail.com</a> or send me a message on
+                            <a href="https://www.linkedin.com/in/jackcchang/" class="email" target="_blank" rel="noopener">LinkedIn</a>.
                         </p>
-
-                        <p class="two-p fade-in two-text-color">
-                            In recent years, I’ve been developing a deeper interest in computer vision and applied AI through coursework and projects,
-                            including an end-to-end geometric vision pipeline and interactive algorithm visualizations.
-                            I’m especially interested in understanding how learning-based and classical methods behave in real-world settings.
-                        </p>
-                        <p class="two-p fade-in two-text-color">Let's work together! Contact me at <a href="mailto:jack8883@gmail.com" class="email">jack8883@gmail.com</a></p>
                         <div class="resume-div fade-in">
-                            <a class="resume-link" href="files/ResumeMay2026.pdf" target="_blank">Resume</a>
+                            <a class="resume-link" href="files/Resume.pdf" target="_blank">Resume</a>
                         </div>
                     </div>
                 </div>
@@ -115,11 +158,20 @@ EMAIL: jack8883@gmail.com
                         </a>
                     </div>
                     <div class="work-div-right">
-                        <h2 class="work-title fade-in">Software Engineer</h2>
-                        <p class="work-company fade-in">AI Tech Knowledge, San Diego, CA</p>
-                        <p class="work-date fade-in">June 2023 - September 2024</p>
-                        <p class="work-p-one work-text-color fade-in">Using <span class="work-highlight">C++</span> and <span class="work-highlight">Python</span>, I utilized <span class="work-highlight">Google's OR-Tools library</span> for constraint optimization for model queueing and solving, and learned to <span class="work-highlight">multithread cores</span> for optimized runtime. Using <span class="work-highlight">ElectronJS</span>, I created an authenticator app that communicates with our <span class="work-highlight">database on Supabase</span>. Finally, using <span class="work-highlight">NodeJS</span>, I developed a component for automatic updates, then created a <span class="work-highlight">service</span> and its corresponding <span class="work-highlight">installer</span> for <span class="work-highlight">Windows and Mac</span>, combining all these components. I also used <span class="work-highlight">Github Actions</span> to automate the build process of all the components through code and backend updates.</p>
-                        <p class="work-p work-text-color fade-in">The final product is to create an AI scheduler webapp. Through this position, I learned to work in a <span class="work-highlight">fast-paced industry position in technology</span>, constantly having to do my own research on things I previously didn't know how to do.</p>
+                        <h2 class="work-company-name fade-in">AI Tech Knowledge</h2>
+                        <p class="work-company fade-in">San Diego, CA</p>
+                        <div class="work-role">
+                            <h3 class="work-title fade-in">Software Engineer</h3>
+                            <p class="work-date fade-in">June 2026 - Present</p>
+                            <p class="work-p-one work-text-color fade-in">I design <span class="work-highlight">end-to-end and branch-coverage test suites</span> for a <span class="work-highlight">constraint-programming scheduling engine</span>, which surfaced <span class="work-highlight">80+ latent solver defects</span> and raised coverage across critical modules from <span class="work-highlight">63% to 97%</span>.</p>
+                            <p class="work-p work-text-color fade-in">From that work I've shipped <span class="work-highlight">50+ solver-correctness fixes</span> using <span class="work-highlight">test-driven development</span> and <span class="work-highlight">root-cause analysis</span>, sequencing changes from low to high risk so production stayed stable throughout.</p>
+                        </div>
+                        <div class="work-role">
+                            <h3 class="work-title fade-in">Part-Time Software Engineer</h3>
+                            <p class="work-date fade-in">June 2023 - September 2024</p>
+                            <p class="work-p-one work-text-color fade-in">I raised throughput on scheduling-optimization workloads by <span class="work-highlight">50%+</span> by writing <span class="work-highlight">multithreaded C++/Python</span> modules on top of <span class="work-highlight">Google OR-Tools</span>, which handled constraint solving and model queueing.</p>
+                            <p class="work-p work-text-color fade-in">I also built the desktop side of the product: a cross-platform <span class="work-highlight">Node.js</span> service that queues, executes, and monitors AI inference tasks, an <span class="work-highlight">Electron.js</span> auth client backed by <span class="work-highlight">Supabase</span>, an auto-updater, and <span class="work-highlight">Windows/macOS installers</span> tying them together. <span class="work-highlight">GitHub Actions</span> CI/CD automated the builds and cut <span class="work-highlight">20+ minutes</span> off every release.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="work-div">
@@ -129,10 +181,14 @@ EMAIL: jack8883@gmail.com
                         </a>
                     </div>
                     <div class="work-div-right">
-                        <h2 class="work-title fade-in">Intern Research Scientist</h2>
-                        <p class="work-company fade-in">MetaGuru, Taipei, Taiwan</p>
-                        <p class="work-date fade-in">June 2023 - November 2023</p>
-                        <p class="work-p-one work-text-color fade-in">I used <span class="work-highlight">OpenAI's ChatGPT API</span> in <span class="work-highlight">Python</span> to develop a preliminary LLM that helped employees understand HR rules by answering their questions. To do this, I researched the capabilities of ChatGPT, possible training and modifications, and cross language limitations. In August of 2023, I flew to Taiwan and presented the project to the company.</p>
+                        <h2 class="work-company-name fade-in">MetaGuru</h2>
+                        <p class="work-company fade-in">Taipei, Taiwan</p>
+                        <div class="work-role">
+                            <h3 class="work-title fade-in">Research Scientist Intern</h3>
+                            <p class="work-date fade-in">June 2023 - November 2023</p>
+                            <p class="work-p-one work-text-color fade-in">I built an internal Q&amp;A assistant in <span class="work-highlight">Python</span> on the <span class="work-highlight">GPT-4 API</span> that answered employee HR policy questions, cutting repetitive policy lookups by <span class="work-highlight">15%</span>.</p>
+                            <p class="work-p work-text-color fade-in">Before building it I compared <span class="work-highlight">three deployment approaches</span>: prompt engineering, fine-tuning feasibility, and how the model handled <span class="work-highlight">English and Mandarin</span>. I recommended a <span class="work-highlight">prompt/RAG prototype</span> so we could iterate faster and maintain less. In August 2023 I flew to Taipei to present the system to the company.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="work-div">
@@ -142,16 +198,25 @@ EMAIL: jack8883@gmail.com
                         </a>
                     </div>
                     <div class="work-div-right">
-                        <h2 class="work-title fade-in">Curriculum Developer & Instructor</h2>
-                        <p class="work-company fade-in">NexStream Technical Education, San Diego, CA</p>
-                        <p class="work-date fade-in">May 2022 - May 2023</p>
-                        <p class="work-p-one work-text-color fade-in">I <span class="work-highlight">developed and taught</span> multiple courses related to computer science:</p>
-                        <ul class="work-ul">
-                            <li class="work-li work-text-color fade-in">Intro to <span class="work-highlight">Pygame</span>, taught in Summer 2022</li>
-                            <li class="work-li work-text-color fade-in">Advanced <span class="work-highlight">Pygame</span>, taught in Summer 2022</li>
-                            <li class="work-li work-text-color fade-in"><span class="work-highlight">Bronze level USA Computing Olympiad logic and algorithms</span> course, taught in the 2022-2023 school year</li>
-                        </ul>
-                        <p class="work-p work-text-color fade-in">All courses can be found <a href="https://nexstreamtek.com/" class="work-link" target="_blank">here</a></p>
+                        <h2 class="work-company-name fade-in">NexStream Technical Education</h2>
+                        <p class="work-company fade-in">San Diego, CA</p>
+                        <div class="work-role">
+                            <h3 class="work-title fade-in">CS Curriculum Developer &amp; Instructor</h3>
+                            <p class="work-date fade-in">May 2022 - May 2023</p>
+                            <p class="work-p-one work-text-color fade-in">I <span class="work-highlight">designed and taught 5 courses</span> in computer science, contributing to a <span class="work-highlight">10%+ increase</span> in student enrollment:</p>
+                            <ul class="work-ul">
+                                <li class="work-li work-text-color fade-in">Intro to <span class="work-highlight">Pygame</span>, taught in Summer 2022</li>
+                                <li class="work-li work-text-color fade-in">Advanced <span class="work-highlight">Pygame</span>, taught in Summer 2022</li>
+                                <li class="work-li work-text-color fade-in"><span class="work-highlight">Bronze level USA Computing Olympiad logic and algorithms</span> course, taught in the 2022-2023 school year</li>
+                            </ul>
+                            <p class="work-p work-text-color fade-in">All courses can be found <a href="https://nexstreamtek.com/" class="work-link" target="_blank">here</a></p>
+                        </div>
+                        <div class="work-role">
+                            <h3 class="work-title fade-in">Intern Data Scientist</h3>
+                            <p class="work-date fade-in">Jan 2022 - May 2022</p>
+                            <p class="work-p-one work-text-color fade-in">I built the company's first learning-visibility system: a <span class="work-highlight">JavaScript xAPI</span> event pipeline feeding <span class="work-highlight">Watershed's Learning Record Store</span>, capturing <span class="work-highlight">20+ activity events</span> so instructors could see student engagement across every course offering.</p>
+                            <p class="work-p work-text-color fade-in">I then wrote <span class="work-highlight">Python</span> analysis tools that scored student progress and <span class="work-highlight">open-ended response accuracy</span>, removing <span class="work-highlight">3+ hours</span> of manual course review each week.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="work-div">
@@ -161,25 +226,14 @@ EMAIL: jack8883@gmail.com
                         </a>
                     </div>
                     <div class="work-div-right">
-                        <h2 class="work-title fade-in">Gameplay Programmer Intern</h2>
-                        <p class="work-company fade-in">Good Trouble, San Francisco, CA</p>
-                        <p class="work-date fade-in">Oct 2022 - March 2023</p>
-                        <p class="work-p-one work-text-color fade-in">I worked on an unreleased combat racing game, focused on two key parts of the project: the <span class="work-highlight">weapon aiming system</span> and <span class="work-highlight">UI controllers</span>. My work involved the newest Unity input system, gamepad controllers, and the new UIToolkit system.</p>
-                        <p class="work-p work-text-color fade-in">Through this project, I gained valuable <span class="work-highlight">hands-on experience in gameplay programming</span> while elevating my <span class="work-highlight">proficiency in C# and Unity</span>. It provided me with opportunities to sharpen my <span class="work-highlight">problem-solving abilities</span>, refine my <span class="work-highlight">debugging skills</span>, and strengthen my <span class="work-highlight">communication</span>.</p>
-                    </div>
-                </div>
-                <div class="work-div">
-                    <div class="work-div-left">
-                        <a href="https://nexstreamtek.com/" target="_blank">
-                            <img class="work-logo fade-in" src="images/nexstream2.webp" alt="Good Trouble Logo">
-                        </a>
-                    </div>
-                    <div class="work-div-right">
-                        <h2 class="work-title fade-in">Intern Programmer & Data Scientist</h2>
-                        <p class="work-company fade-in">NexStream Technical Education, San Diego, CA</p>
-                        <p class="work-date fade-in">Jan 2022 - May 2022</p>
-                        <p class="work-p-one work-text-color fade-in">I developed a comprehensive backend program using <span class="work-highlight">JavaScript xAPI</span> in conjunction with Watershed's Learning Record Store to <span class="work-highlight">collect and analyze data</span> on students' progress, time usage, and accuracy.</p>
-                        <p class="work-p work-text-color fade-in">Furthermore, I utilized <span class="work-highlight">Python</span> to <span class="work-highlight">implement algorithms</span> that assess students' advancements and accuracy specifically in open-ended questions, <span class="work-highlight">aiming to enhance the overall quality of the courses</span>.</p>
+                        <h2 class="work-company-name fade-in">Good Trouble</h2>
+                        <p class="work-company fade-in">San Francisco, CA</p>
+                        <div class="work-role">
+                            <h3 class="work-title fade-in">Gameplay Programmer Intern</h3>
+                            <p class="work-date fade-in">Oct 2022 - March 2023</p>
+                            <p class="work-p-one work-text-color fade-in">On an unreleased combat racing game built in <span class="work-highlight">Unity and C#</span>, I owned the <span class="work-highlight">weapon aiming system</span> and <span class="work-highlight">UI controllers</span>, working with Unity's then-new <span class="work-highlight">Input System</span> for gamepad support and <span class="work-highlight">UIToolkit</span> for the interface layer.</p>
+                            <p class="work-p work-text-color fade-in">I cut projectile performance overhead by <span class="work-highlight">50%</span> by replacing per-shot instantiation with <span class="work-highlight">object pooling</span> for reusable weapon systems, profiled against both <span class="work-highlight">PC and Xbox</span> targets.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -190,15 +244,43 @@ EMAIL: jack8883@gmail.com
 
                 <div class="project-div-type-2 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
                     <div class="project-div-left-2">
-                        <img class="project-image-2" src="images/Orion.png" alt="Orion AI threat assessment system preview">
+                        <img class="project-image-2" src="images/ChessCommentaryPresentation.png" alt="Rookie chess commentary preview">
                     </div>
 
                     <div class="project-div-right-2">
+                        <h2 class="project-title">Rookie: AI Chess Commentary Generator</h2>
+                        <h3 class="project-time">Project Lead</h3>
+
+                        <p class="project-text">
+                            A fine-tuned T5 model that turns Stockfish engine signals into grounded natural-language move commentary, preferred over GPT-4o-mini by 73.7% of human evaluators.
+                        </p>
+
+                        <div class="project-buttons">
+                            <button class="project-btn project-readmore" type="button" aria-label="Read more about Rookie">Read more</button>
+                            <a href="https://huggingface.co/ToastyDreams/chess-commentary-t5" class="project-btn project-demo" target="_blank">Hugging Face</a>
+                            <a href="https://github.com/inqnhoang/Chess-Commentator" class="project-btn project-github" target="_blank">Github</a>
+                        </div>
+
+                        <div class="project-fulltext" hidden>
+                            <p>
+                                Rookie grounds language generation in engine analysis rather than letting a model narrate from the board alone.
+                                For every position I extract 27 engine-derived features (evaluation swing, win-percentage delta, checks, captures, hanging pieces, mobility change, trades, positional gains), so each explanation traces back to a measurable signal.
+                            </p>
+
+                            <p>
+                                Deterministic templates over those features produced 3.9M+ synthetic commentaries from 197K+ FEN positions, which I used to fine-tune a T5-small seq2seq model.
+                                Benchmarked against GPT-4o-mini on 1,000 held-out positions, it won 69.6% preference from a Gemini-2.5-Flash LLM judge and 73.7% from human chess players, scored on faithfulness, relevance, informativeness, clarity, and conciseness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-div-type-1 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
+                    <div class="project-div-left-1">
                         <h2 class="project-title">Orion: AI Threat Assessment System</h2>
                         <h3 class="project-time">Sole Developer</h3>
 
                         <p class="project-text">
-                            A defense-inspired AI simulation that tracks global airborne objects, scores potential threats, and provides an AI advisor for interpreting risk and recommending responses.
+                            A full-stack threat assessment simulator that tracks airborne objects on a live map, scores them against a multi-factor risk model, and pairs the score with an LLM advisor that explains it.
                         </p>
 
                         <div class="project-buttons">
@@ -209,49 +291,22 @@ EMAIL: jack8883@gmail.com
 
                         <div class="project-fulltext" hidden>
                             <p>
-                                Orion is a full-stack threat assessment simulator built around a live map interface, simulated aircraft and unknown tracks, and an AI advisor that helps explain the system's reasoning.
-                                The project models objects with attributes such as location, altitude, heading, intent, capability, and suspicious behavior, then uses those signals to estimate risk.
+                                Orion simulates aircraft and unidentified tracks over a live map, modeling each object by location, altitude, heading, intent, capability, and anomalous behavior.
+                                Those attributes feed a weighted scoring model that produces a continuous threat estimate, so an operator can see not just the ranking but the factors driving it.
                             </p>
 
                             <p>
-                                I designed the system to feel like an operational decision-support tool: users can inspect objects, view threat scores, ask the AI advisor questions, and receive scenario-based recommendations.
-                                The goal was to combine simulation, scoring logic, UI design, and LLM-based explanation into a polished defense/space-oriented portfolio project.
+                                The harder part was explainability, since a raw threat score isn't much use if you can't say where it came from.
+                                I wired the LLM advisor to the same feature vector the scorer reads, so it can answer questions about a specific track,
+                                walk through why that track ranked where it did, and suggest a response without contradicting the model underneath it.
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="project-div-type-1 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
-                <div class="project-div-left-1">
-                    <h2 class="project-title">Chess Commentator</h2>
-                    <h3 class="project-time">Project Lead</h3>
 
-                    <p class="project-text">
-                        An AI chess commentary system that converts board positions and engine analysis into natural-language explanations using Stockfish features and a fine-tuned T5 model.
-                    </p>
-
-                    <div class="project-buttons">
-                        <button class="project-btn project-readmore" type="button" aria-label="Read more about Chess Commentator">Read more</button>
-                        <a href="https://huggingface.co/ToastyDreams/chess-commentary-t5" class="project-btn project-demo" target="_blank">Hugging Face</a>
-                        <a href="https://github.com/inqnhoang/Chess-Commentator" class="project-btn project-github" target="_blank">Github</a>
-                    </div>
-
-                    <div class="project-fulltext" hidden>
-                        <p>
-                            Chess Commentator generates human-like commentary for chess moves by combining traditional engine analysis with machine learning.
-                            For each position, the system extracts Stockfish-based features such as evaluation swing, win percentage change, checks, captures, hanging pieces, mobility changes, trades, and positional improvements.
-                        </p>
-
-                        <p>
-                            I generated a large-scale training dataset using deterministic commentary templates, then fine-tuned a T5 sequence-to-sequence model to translate structured chess features into readable explanations.
-                            The model was evaluated against GPT-generated commentary using rubric-based scoring for faithfulness, relevance, informativeness, clarity, human-likeness, and conciseness.
-                        </p>
+                    <div class="project-div-right-1">
+                        <img class="project-image-1" src="images/Orion.png" alt="Orion AI threat assessment system preview">
                     </div>
                 </div>
-
-                <div class="project-div-right-1">
-                    <img class="project-image-1" src="images/ChessCommentaryPresentation.png" alt="Chess Commentator preview">
-                </div>
-            </div>
                 <div class="project-div-type-2 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
                     <div class="project-div-left-2">
                         <img class="project-image-2" src="images/CVProject.png" alt="Computer Vision Pipeline preview">
@@ -259,19 +314,20 @@ EMAIL: jack8883@gmail.com
                     <div class="project-div-right-2">
                         <h2 class="project-title">Geometric Computer Vision Pipeline</h2>
                         <h3 class="project-time">Sole Developer</h3>
-                        <p class="project-text">An end-to-end classical computer vision pipeline for feature matching, homography estimation, and panorama stitching with robust alignment visualization.</p>
+                        <p class="project-text">An end-to-end classical vision pipeline (ORB feature matching, RANSAC homography estimation, inverse warping, blending) with debug tooling built to work out where alignment fails.</p>
                         <div class="project-buttons">
                             <button class="project-btn project-readmore" type="button" aria-label="Read more about this project">Read more</button>
                             <a href="https://github.com/ToastyDreams413/geometric-computer-vision" class="project-btn project-github" target="_blank">Github</a>
                         </div>
                         <div class="project-fulltext" hidden>
                             <p>
-                                This project combines multiple computer vision assignments into a single pipeline: feature detection and matching (ORB), 
-                                robust homography estimation (RANSAC), inverse warping, and blending for panorama construction.
+                                I consolidated several computer vision assignments into one coherent pipeline: ORB feature detection and matching,
+                                RANSAC-based homography estimation, inverse warping, and multi-band blending for panorama construction.
                             </p>
                             <p>
-                                To validate alignment quality, I built visual debug tools for match correspondences, inlier masks, and intermediate warp stages, 
-                                making it easier to diagnose failure cases (repetitive textures, low parallax, motion blur).
+                                Getting a panorama to stitch is easy. Working out why it didn't is the hard part, so I built visual debug tooling for
+                                match correspondences, RANSAC inlier masks, and every intermediate warp stage. That turned the usual failure cases
+                                (repetitive textures, low parallax, motion blur) into something I could actually diagnose instead of guess at.
                             </p>
                         </div>
                     </div>
@@ -280,7 +336,7 @@ EMAIL: jack8883@gmail.com
                     <div class="project-div-left-1">
                         <h2 class="project-title">Monte Carlo Tree Search Visualization</h2>
                         <h3 class="project-time">Sole Developer</h3>
-                        <p class="project-text">An interactive web demo that visualizes the Monte Carlo Tree Search algorithm, showing how decisions emerge through simulation and backpropagation.</p>
+                        <p class="project-text">An interactive demo that renders Monte Carlo Tree Search step by step, exposing how visit counts and value estimates converge on a decision.</p>
                         <div class="project-buttons">
                             <button class="project-btn project-readmore" type="button" aria-label="Read more about this project">Read more</button>
                             <a href="https://mcts-project1.vercel.app/" class="project-btn project-demo" target="_blank">Live Demo</a>
@@ -288,11 +344,12 @@ EMAIL: jack8883@gmail.com
                         </div>
                         <div class="project-fulltext" hidden>
                             <p>
-                                I built this project to better understand and explain Monte Carlo Tree Search (MCTS), which is an algorithm commonly used in game AI and planning.
-                                The demo visualizes selection, expansion, simulation (rollouts), and backpropagation, showing how visit counts and value estimates evolve as the tree grows.
+                                MCTS underpins a lot of game AI and planning, but its behavior is hard to reason about from pseudocode alone.
+                                This demo animates all four phases (selection, expansion, rollout, backpropagation) so you can watch the tree's statistics build up instead of inferring them from pseudocode.
                             </p>
                             <p>
-                                The UI is designed for clarity: you can see node values, visit counts, and the decision path that the search currently favors.
+                                Every node shows its value estimate and visit count, and the path the search currently favors is highlighted as it shifts,
+                                which makes the exploration/exploitation tradeoff in UCT easy to see as it happens.
                             </p>
                         </div>
                     </div>
@@ -315,77 +372,99 @@ EMAIL: jack8883@gmail.com
                         </div>
                         <div class="project-fulltext" hidden>
                             <p>
-                                ToastyPlugin is a Java Minecraft server plugin I built to explore server-side, event-driven programming in a multiplayer environment.
-                                The main focus was writing maintainable gameplay logic while keeping state updates consistent and responsive.
+                                ToastyPlugin is a Java Minecraft server plugin I built to work through server-side event-driven programming with real concurrent clients.
+                                The constraint that shaped it was keeping state consistent and responsive while multiple players triggered overlapping events on the same tick.
                             </p>
                             <p>
-                                I structured the code into modules (commands/listeners/managers) so new mechanics were easy to add without turning the project into one giant class.
+                                I split the code into commands, listeners, and managers so each new mechanic was an additive change rather than another branch in a growing god class.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="project-div-type-1 fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
-                    <div class="project-div-left-1">
-                        <h2 class="project-title">"Retune": Youtube UI Rework</h2>
-                        <h3 class="project-time">Project Lead</h3>
-                        <p class="project-text">A redesigned YouTube web interface focused on usability, layout clarity, and interaction flow.</p>
-                        <div class="project-buttons">
-                            <button class="project-btn project-readmore" type="button" aria-label="Read more about this project">Read more</button>
-                            <a href="https://in-4-matx-134-project.vercel.app/" class="project-btn project-demo" target="_blank">Live Demo</a>
-                            <a href="https://github.com/Taikiy49/IN4MATX-134-PROJECT" class="project-btn project-github" target="_blank">Github</a>
-                        </div>
-                        <div class="project-fulltext" hidden>
-                            <p>
-                                I worked on a YouTube UI redesign focused on improving usability, visual hierarchy, and interaction clarity.
-                                The project explored how layout, spacing, and component structure affect user navigation and content discovery.
-                            </p>
-                            <p>
-                                I implemented core interface components and interactions using modern frontend practices, emphasizing
-                                clean structure, responsiveness, and consistency across views.
-                            </p>
-                            <p>
-                                This project strengthened my understanding of frontend architecture, UI composition, and translating
-                                design goals into maintainable code.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-div-right-1">
-                        <img class="project-image-1" src="images/Retune.png" alt="Retune Picture">
-                    </div>
-                </div>
-                <div class="project-div-type-2 project-reverse fade-in-project-div" onmouseover="hoverUp(this)" onmouseout="hoverDown(this)">
-                    <div class="project-div-left-2">
-                        <img class="project-image-2" src="images/WebCrawler.png" alt="Web Crawler Picture">
-                    </div>
-                    <div class="project-div-right-2">
-                        <h2 class="project-title">Web Crawler</h2>
-                        <h3 class="project-time">Programmer</h3>
-                        <p class="project-text">A web crawler that collects, parses, and indexes web pages for efficient search and analysis.</p>
-                        <div class="project-buttons">
-                            <button class="project-btn project-readmore" type="button" aria-label="Read more about this project">Read more</button>
-                            <a href="https://github.com/rosnita7/cs121_A3" class="project-btn project-github" target="_blank">Github</a>
-                        </div>
-                        <div class="project-fulltext" hidden>
-                            <p>
-                                I built a web crawler that systematically traverses web pages, extracts content, and builds
-                                structured indexes for later querying and analysis.
-                            </p>
-                            <p>
-                                The project involved handling URL traversal, avoiding duplicate visits, parsing page content,
-                                and organizing data in a way that supports efficient lookup.
-                            </p>
-                            <p>
-                                This work reinforced core backend concepts such as data processing pipelines, algorithmic traversal,
-                                and writing robust code for large input spaces.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            </div>
         </section>
-        <section class="section five" id="section-5">
+        <!-- Colour classes (.one-.six) are backgrounds only and don't track position;
+             this section uses .six so the contact section keeps its existing palette. -->
+        <section class="section six" id="section-5">
+            <div class="honors-div">
+                <h2 class="honors-h2 text-color-three">Certifications &amp; Honors</h2>
+                <div class="honors-grid">
+                    <a class="honor-card fade-in" href="https://www.credly.com/badges/52482ab6-156e-4e78-9cbb-7dc670306281/" target="_blank" rel="noopener">
+                        <h3 class="honor-title">AWS Certified Cloud Practitioner</h3>
+                        <p class="honor-meta">Amazon Web Services</p>
+                        <p class="honor-date">July 2026</p>
+                        <p class="honor-desc">Core AWS services, pricing models, and the shared responsibility model.</p>
+                        <span class="honor-verify">View badge</span>
+                    </a>
+                    <a class="honor-card fade-in" href="https://www.certmetrics.com/comptia/public/verification.aspx" target="_blank" rel="noopener">
+                        <h3 class="honor-title">CompTIA A+</h3>
+                        <p class="honor-meta">CompTIA</p>
+                        <p class="honor-date">Renewed July 2026</p>
+                        <p class="honor-desc">Hardware, operating systems, and network troubleshooting fundamentals. Credential ID LGZEZT2EXDQE1HWQ.</p>
+                        <span class="honor-verify">Verify credential</span>
+                    </a>
+                    <a class="honor-card fade-in" href="https://usaco.org/current/data/open20_silver_results.html" target="_blank" rel="noopener">
+                        <h3 class="honor-title">USACO Gold Division</h3>
+                        <p class="honor-meta">USA Computing Olympiad</p>
+                        <p class="honor-date">Promoted from Silver, 2020 US Open</p>
+                        <p class="honor-desc">Contest algorithm problems solved in C++ and Python under time limits.</p>
+                        <span class="honor-verify">View results</span>
+                    </a>
+                    <div class="honor-card fade-in">
+                        <h3 class="honor-title">Eagle Scout</h3>
+                        <p class="honor-meta">Boy Scouts of America</p>
+                        <p class="honor-date">October 2021</p>
+                        <p class="honor-desc">Highest rank in Scouts BSA, earned by planning and leading a service project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section seven" id="section-6">
+            <div class="personal-div">
+                <h2 class="personal-h2">Outside of Work</h2>
+                <div class="personal-grid">
+                    <div class="personal-item fade-in">
+                        <h3 class="personal-title">Chess</h3>
+                        <p class="personal-text">
+                            I started really getting into chess during Covid, and grinded until I hit a peak rating
+                            of 2200 rapid on chess.com. At UCI I joined the chess club and ended up getting invited
+                            to play on the Pan-Ams collegiate team.
+                        </p>
+                    </div>
+                    <div class="personal-item fade-in">
+                        <h3 class="personal-title">Guitar</h3>
+                        <p class="personal-text">
+                            Been playing since elementary school, so it's been over a decade now. I played in my high
+                            school's jazz band, and now I just learn whatever I find fun to play. Some of my
+                            favorite songs to play include Flower Dance by DJ Okawari, Playing God by Polyphia,
+                            and Kamado Tanjiro no Uta from Demon Slayer.
+                        </p>
+                    </div>
+                    <div class="personal-item fade-in">
+                        <h3 class="personal-title">Badminton</h3>
+                        <p class="personal-text">
+                            I played tennis for many years, but stopped when Covid closed the courts. Then I tried
+                            badminton with friends my senior year of high school, and quickly found it to be my
+                            favorite sport. Now I'm mainly a singles and mixed player, participating in tournaments
+                            such as UCSD Sun God and UCI ACC.
+                        </p>
+                    </div>
+                    <div class="personal-item fade-in">
+                        <h3 class="personal-title">Hiking and the Outdoors</h3>
+                        <p class="personal-text">
+                            My love for the outdoors came from Boy Scouts, where I went on many camping and backpacking
+                            trips. I love challenges and exploring new places. Some of my personal favorites include
+                            reaching the snow on Mount Rainier, braving a snowstorm in Yosemite, and backpacking through
+                            Anza-Borrego.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section five" id="section-7">
             <div class="contact-div">
                 <h2 class="contact-h2 text-color-five">Get In Touch</h2>
-                <p class="contact-p text-color-five">I’m currently looking for new opportunities! Feel free to reach out whether you have a question or just want to say hi. I’ll try my best to get back to you!</p>
+                <p class="contact-p text-color-five">AI/ML adjacent and hardware is where I’m most curious right now, but I’m open to software engineering roles broadly. Reach out if you want to talk about a role, a project, or anything above. I’ll get back to you!</p>
                 <div class="contact-contacts">
                     <a href="mailto:jack8883@gmail.com" class="contact-email">jack8883@gmail.com</a>
                     <a href="tel:8583531522" class="contact-phone">(858) 353-1522</a>

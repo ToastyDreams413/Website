@@ -181,6 +181,36 @@ section {
     background-color: rgba(54, 83, 124, 1);
 }
 
+.sections-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid rgba(231, 223, 221, 0.3);
+}
+
+.sections-social {
+    display: flex;
+    align-items: center;
+    color: #E7DFDD;
+}
+
+.sections-social svg {
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.sections-social:hover {
+    color: #45bab5;
+}
+
+.sections-social:hover svg {
+    transform: translateY(-3px);
+}
+
 
 
 
@@ -242,8 +272,12 @@ section {
 
 
 
+/* Vertical padding so the About content never butts against the section
+   edges. Narrower breakpoints set their own padding further down. */
 .two {
     background: #369f9b;
+    padding-top: 5.25rem;
+    padding-bottom: 5.25rem;
 }
 
 .three {
@@ -254,8 +288,16 @@ section {
     background: #141a20;
 }
 
+/* Deep teal rather than a light tone: the fixed social icons and selector
+   circles are light-stroked, so a pale section background hides them. */
 .six {
-    background: #EFE2BA;
+    background: #12363f;
+}
+
+/* Mid-teal, sitting between .six (#12363f) and .five (#9fc2ba) so the last
+   three sections read as one progression instead of three unrelated jumps. */
+.seven {
+    background: #2c6b62;
 }
 
 .five {
@@ -376,12 +418,15 @@ section {
     justify-content: center;
 }
 
+/* Wider than the old 38rem: the About bullets carry more now, and a longer
+   line length costs fewer wrapped lines than it does horizontal room. The
+   width plus the image also sets how much outer margin the section has. */
 .two-left-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 5rem;
-    width: 38rem;
+    margin-right: 4rem;
+    width: 47rem;
 }
 
 .two-right {
@@ -395,8 +440,25 @@ section {
 }
 
 .two-p {
-    margin-top: 1.875rem;
-    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+/* Slightly smaller than .two-p so five bullets still fit beside the photo.
+   Gap and line-height stay generous enough that the list doesn't read as a
+   wall, without pushing the section into a long scroll. */
+.about-ul {
+    margin-top: 1.1rem;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.about-li {
+    font-size: 1.06rem;
+    line-height: 1.5;
+    padding-left: 0.3rem;
 }
 
 .email {
@@ -405,8 +467,11 @@ section {
     color: #0E0B16;
 }
 
+/* max-width guard: this rule has no breakpoint overrides, so without it the
+   wider photo would overflow its column on narrow phones. */
 .image-two {
-    width: 20rem;
+    width: 23rem;
+    max-width: 100%;
     height: auto;
 }
 
@@ -463,10 +528,13 @@ section {
     margin-bottom: 5rem;
 }
 
+/* Top-aligned rather than centred: blocks now vary a lot in height depending
+   on how many roles a company has, and a centred logo drifts away from its
+   company heading. */
 .work-div-left {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
     margin-right: 0.625rem;
 }
@@ -485,19 +553,39 @@ section {
     justify-content: center;
 }
 
+/* Company is the parent heading; roles nest under it so a company with two
+   positions only needs one logo. */
+.work-company-name {
+    color: #E7DFDD;
+    font-family: "Russo One";
+    font-weight: normal;
+    font-size: 1.9rem;
+    text-align: left;
+    margin-bottom: 0.3rem;
+}
+
 .work-title {
     color: #50c9c3;
     font-family: "Russo One";
-    font-weight: light;
-    font-size: 1.8rem;
+    font-weight: normal;
+    font-size: 1.45rem;
     text-align: left;
-    margin-bottom: 0.9375rem;
+    margin-bottom: 0.3rem;
+}
+
+.work-role {
+    margin-top: 1.5rem;
+}
+
+/* Wider gap only between sibling roles, not above the first one. */
+.work-role + .work-role {
+    margin-top: 2.25rem;
 }
 
 .work-company {
     color: rgb(175, 180, 197);
-    margin-bottom: 0.625;
-    font-size: 1.3rem;
+    margin-bottom: 0.625rem;
+    font-size: 1.2rem;
     font-weight: 520;
 }
 
@@ -2601,4 +2689,273 @@ body.modal-open {
 #caret.blink {
   opacity: 1;
   animation: blink-caret 1.1s step-end infinite;
+}
+
+/* ===== Top-bar responsiveness ===== */
+/* Keep the nav on one line once the social links are added. */
+@media screen and (max-width: 950px) {
+
+    .sections-button {
+        margin-left: 0.85rem;
+        margin-right: 0.85rem;
+    }
+
+    .sections-socials {
+        gap: 0.9rem;
+        padding-left: 0.95rem;
+    }
+
+    .sections-social svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .sections-resume {
+        margin-left: 0.95rem;
+        margin-right: 1.25rem;
+        padding: 0.4rem 0.85rem;
+    }
+
+}
+
+/* Below 675px the section links are dropped, but the bar stays so the
+   GitHub/LinkedIn/Resume links remain reachable (the corner icons are
+   hidden at these widths). */
+@media screen and (max-width: 675px) {
+
+    .fixed-sections-div {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+    }
+
+    .sections-button {
+        display: none;
+    }
+
+    .sections-socials {
+        gap: 1.15rem;
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .sections-social svg {
+        width: 1.35rem;
+        height: 1.35rem;
+    }
+
+    .sections-resume {
+        margin-left: 1.35rem;
+        margin-right: 1.25rem;
+        padding: 0.4rem 0.95rem;
+    }
+
+}
+
+
+/* ===== Certifications & Honors ===== */
+.honors-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.honors-h2 {
+    font-family: "Russo One";
+    font-weight: normal;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+/* auto-fit keeps the card count per row correct at any width without
+   a breakpoint for each step. */
+.honors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 70rem;
+}
+
+/* Cards are <a> when the credential can be verified online and <div> when it
+   can't, so the shared styling has to work for both. */
+.honor-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 2px solid #50c9c3;
+    border-radius: 1rem;
+    padding: 1.5rem 1.6rem;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+a.honor-card {
+    text-decoration: none;
+}
+
+.honor-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(80, 201, 195, 0.12);
+}
+
+a.honor-card:focus-visible {
+    outline: 2px solid #E7DFDD;
+    outline-offset: 3px;
+}
+
+.honor-title {
+    font-family: "Russo One";
+    font-weight: normal;
+    font-size: 1.25rem;
+    color: #50c9c3;
+    margin-bottom: 0.6rem;
+}
+
+.honor-meta {
+    font-size: 1.05rem;
+    font-weight: 520;
+    color: rgb(203, 214, 218);
+    margin-bottom: 0.25rem;
+}
+
+.honor-date {
+    font-size: 1rem;
+    font-style: italic;
+    color: rgb(150, 175, 181);
+}
+
+.honor-desc {
+    margin-top: 0.85rem;
+    font-size: 1rem;
+    font-weight: 520;
+    line-height: 1.45;
+    color: rgb(183, 197, 202);
+}
+
+/* margin-top:auto pins the link cue to the bottom so it lines up across cards
+   of differing text length. */
+.honor-verify {
+    margin-top: auto;
+    padding-top: 1rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #50c9c3;
+}
+
+.honor-card:hover .honor-verify {
+    text-decoration: underline;
+}
+
+/* ===== Outside of Work ===== */
+.personal-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.personal-h2 {
+    font-family: "Russo One";
+    font-weight: normal;
+    text-align: center;
+    font-size: 4rem;
+    color: #E7DFDD;
+}
+
+/* 24rem minimum lands these four on a 2x2 at desktop. Four thin columns would
+   make paragraphs this long very tall and hard to read. */
+.personal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: 2.25rem 3rem;
+    width: 100%;
+    max-width: 70rem;
+    margin-top: 2rem;
+}
+
+.personal-title {
+    font-family: "Russo One";
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #E7DFDD;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid rgba(231, 223, 221, 0.35);
+}
+
+.personal-text {
+    font-size: 1.1rem;
+    font-weight: 520;
+    line-height: 1.55;
+    color: rgb(226, 238, 234);
+}
+
+@media screen and (max-width: 1100px) {
+
+    .honors-div {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 675px) {
+
+    .honors-div {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .honors-h2 {
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .honors-grid {
+        grid-template-columns: 1fr;
+        gap: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .personal-div {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 675px) {
+
+    .personal-div {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .personal-h2 {
+        font-size: 2.8rem;
+    }
+
+    .personal-grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
 }

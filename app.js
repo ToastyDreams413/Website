@@ -111,6 +111,8 @@ const intro = document.getElementById("intro");
 const myName = document.getElementById("name");
 const typedText1 = document.getElementById("typed-text");
 const typedText2 = document.getElementById("typed-text-two");
+// Static tagline shown in place of the typing animation on narrow screens.
+const heroTagline = document.getElementById("hero-tagline");
 
 function type1() {
   if (index < text1.length) {
@@ -146,6 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
     intro.classList.add("visible");
     myName.classList.add("visible");
     scrolldown.classList.add("visible");
+    heroTagline.classList.add("visible");
   }, 100);
   setTimeout(() => {
     caret.classList.remove("blink");
